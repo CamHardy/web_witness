@@ -29,10 +29,19 @@ npm test
 
 ## The To-do List:
 ### The Front End
-- [ ] HTML
+- [ ] HTML (Vue)
 	- [ ] Load scripts
 		- [ ] p5 for canvas drawing
-	- [ ] Canvas
+	- [ ] Title Bar
+		- [ ] Logo in the center
+			- [ ] Different logo depending on current page?
+		- [ ] Menu drawer on right side for navigation
+	- [ ] Home 
+		- [ ] Size canvas to screen
+		- [ ] Draw special linear maze with multiple exits
+		- [ ] Label exits (log in sign up, about, etc)
+		- [ ] Depending on the exit chosen, redirect to corresponding page
+	- [ ] Game
 		- [ ] Size canvas to fit screen/window
 		- [ ] Draw cursor
 		- [ ] Draw maze from data
@@ -46,9 +55,26 @@ npm test
 			- [ ] If path reaches an exit, check that all rules have been satisfied
 				- [ ] idk how rules are going to be implemented honestly
 			- [ ] If path starts at entrance, ends at exit, all rules are satisfied, then maze is "solved", transition to next maze
+			- [ ] Path color
+				- [ ] Being drawn (usually soft white)
+				- [ ] Reached exit (pulses brighter)
+				- [ ] Solution correct (usually a lighter shade matching the background)
+				- [ ] Solution incorrect (turn black and fade out)
+				- [ ] Path cancel (fade out)
 		- [ ] Transition between mazes
 			- [ ] Unload/Load animation
-	- [ ] Make it look pretty with some CSS
+		- [ ] Audio
+			- [ ] Monitor on/off
+			- [ ] Panel focus
+			- [ ] Entrance pulse
+			- [ ] Exit pulse
+			- [ ] Draw start
+			- [ ] Draw cancel
+			- [ ] Exit reached
+			- [ ] Solution correct
+			- [ ] Solution incorrect
+	- [ ] Make it look pretty
+		- [ ] CSS
 		- [ ] Nice transitions between puzzles
 		- [ ] Color transitions
 	- [ ] User interaction
@@ -78,16 +104,17 @@ npm test
 
 ### Future
 - [ ] Add new rules?
-- [ ] User-made mazes
-	- [ ] Client maze editor
-	- [ ] User can share their mazes with others
-		- [ ] Store on server?
-			- [ ] Makes req/res simple
-			- [ ] Requires storage 
-		- [ ] Encode maze data in URL?
-			- [ ] No storage required
-			- [ ] Mazes are generated from URL on the fly
-- [ ] Auto-generated mazes (infinite mode)
-- [ ] The Gauntlet 
-	- [ ] Complete a set number of puzzles within a time limit
+- [ ] New game modes
+	- [ ] User-made mazes
+		- [ ] Client maze editor
+		- [ ] User can share their mazes with others
+			- [ ] Store on server?
+				- [ ] Makes req/res simple
+				- [ ] Requires storage 
+			- [ ] Encode maze data in URL?
+				- [ ] No storage required
+				- [ ] Mazes are generated from URL on the fly
+	- [ ] Auto-generated mazes (infinite mode)
+	- [ ] The Gauntlet 
+		- [ ] Complete a set number of puzzles within a time limit
 
